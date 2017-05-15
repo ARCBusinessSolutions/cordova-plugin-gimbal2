@@ -6,14 +6,14 @@
 
     <name>Gimbal2</name>
     <description>Cordova Gimbal v2 Plugin</description>
-    <author>Denny Tsai</author>
+    <author>ARC Business Solutions</author>
     <license>Apache 2.0</license>
     <keywords>cordova,gimbal,ibeacon</keywords>
-    <repo>https://github.com/happydenn/cordova-plugin-gimbal2.git</repo>
-    <issue>https://github.com/happydenn/cordova-plugin-gimbal2/issues</issue>
+    <repo>https://github.com/ARCBusinessSolutions/cordova-plugin-gimbal2.git</repo>
+    <issue>https://github.com/ARCBusinessSolutions/cordova-plugin-gimbal2/issues</issue>
 
     <engines>
-        <engine name="cordova" version=">=3.0" />
+        <engine name="cordova" version=">=3.0.0" />
     </engines>
 
     <js-module src="www/Gimbal2.js" name="Gimbal2">
@@ -21,9 +21,12 @@
     </js-module>
 
     <platform name="android">
+
+        <source-file src="src/android/Gimbal2.java" target-dir="src/com/arcbus/cordova/gimbal2" />
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Gimbal2">
-                <param name="android-package" value="io.hpd.cordova.gimbal2.Gimbal2" />
+                <param name="android-package" value="com.arcbus.cordova.gimbal2.Gimbal2" />
             </feature>
         </config-file>
 
@@ -38,7 +41,6 @@
             <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
         </config-file>
 
-        <source-file src="src/android/Gimbal2.java" target-dir="src/io/hpd/cordova/gimbal2" />
     </platform>
 
     <platform name="ios">

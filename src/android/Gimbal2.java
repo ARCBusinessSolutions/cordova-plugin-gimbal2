@@ -1,4 +1,4 @@
-package io.arcbus.cordova.gimbal2;
+package com.arcbus.cordova.gimbal2;
 
 /*
  * Cordova Plugin - Gimbal v2
