@@ -4,9 +4,13 @@
  * 2017 ARC Business Solutions <arcbus.com>
  */
 
+var exec = require('cordova/exec'),
+    cordova = require('cordova');
+
 var Gimbal2 = function () {
     this.hasInitialized = false;
 };
+
 
 Gimbal2.prototype.initialize = function (apiKey) {
     if (this.hasInitialized) return;
@@ -38,11 +42,5 @@ Gimbal2.prototype.stopBeaconManager = function () {
 
 //-------------------------------------------------------------------
 
-if (!window.plugins)
-    window.plugins = {};
-
-if (!window.plugins.Gimbal2)
-    window.plugins.Gimbal2 = new Gimbal2();
-
-if (typeof module != 'undefined' && module.exports)
-    module.exports = Gimbal2;
+var gimbal2 = new Gimbal2();
+module.exports = gimbal2;
