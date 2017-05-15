@@ -27,6 +27,8 @@
     NSString *apiKey = command.arguments[0];
     statusCallbackId = command.callbackId;
     
+    [Gimbal start];
+    
     [Gimbal setAPIKey:apiKey options:nil];
 }
 
