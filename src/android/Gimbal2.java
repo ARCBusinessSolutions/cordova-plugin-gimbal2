@@ -1,8 +1,9 @@
-package io.hpd.cordova.gimbal2;
+package io.arcbus.cordova.gimbal2;
 
 /*
- * Cordova Plugin - Gimba v2
- * Denny Tsai <happydenn@happydenn.net>
+ * Cordova Plugin - Gimbal v2
+ * 2015 Denny Tsai <happydenn@happydenn.net>
+ * 2017 ARC Business Solutions <arcbus.com>
  */
 
 import java.util.Date;
