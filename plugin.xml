@@ -41,6 +41,9 @@
             <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
         </config-file>
 
+
+        <framework src="src/ios/Gimbal.framework" custom="true" />
+        
     </platform>
 
     <platform name="ios">
